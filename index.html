@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user-details.css">
+    <title>User Details</title>
+</head>
+<body>
+    <div class="user-details-container">
+        <h1>Enter Your Details</h1>
+        <form id="userDetailsForm">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="userPhoto">Photo URL:</label>
+            <input type="url" id="userPhoto" name="userPhoto" required>
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="userAbout">About Me:</label>
+            <textarea id="userAbout" name="userAbout" rows="4" required></textarea>
+
+            <label for="aboutPhoto">About Photo URL:</label>
+            <input type="url" id="aboutPhoto" name="aboutPhoto" required>
+
+            <label for="userSkills">Skills:</label>
+            <textarea id="userSkills" name="userSkills" required></textarea>
+
+            <label for="userEducation">Education:</label>
+            <textarea id="userEducation" name="userEducation" rows="4" required></textarea>
+
+            <label for="userProject">Project:</label>
+            <textarea id="userProject" name="userProject" rows="4" required></textarea>
+
+            <label for="userResume">Resume URL:</label>
+            <input type="url" id="userResume" name="userResume" required>
+
+            <label for="contactDetails1">Address:</label>
+            <input type="text" id="contactDetails1" name="contactDetails1" rows="4" required>
+
+            <label for="contactDetails">Phone Number:</label>
+            <input type="number" id="contactDetails" name="contactDetails" rows="4" required>
+
+            <label for="contactDetails2">Email:</label>
+            <input type="email" id="contactDetails2" name="contactDetails2" rows="4" required>
+
+            <button type="button" onclick="submitDetails()">Submit</button>
+        </form>
+    </div>
+
+    <script src="user-details.js"></script>
+</body>
+</html>
